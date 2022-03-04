@@ -1,0 +1,30 @@
+{
+    "name": "Campus Community",
+    "about_url": "https://campus.town",
+    "license_url": "",
+    "assets":{
+      "font-regular": "assets/productsans-regular.woff",
+      "font-regular-2": "assets/productsans-regular.woff2",
+      "font-bold": "assets/productsans-bold.woff",
+      "font-bold-2": "assets/productsans-bold.woff2",
+      "font-light": "assets/productsans-light.woff",
+      "font-light-2": "assets/productsans-light.woff2"
+    },
+    "color_schemes": {
+       "Campus Default": {
+          "primary": "202124",
+          "secondary": "f8f9fb",
+          "tertiary": "5F01D1",
+          "tertiary-high": "37017C",
+          "tertiary-low": "C4B3D8",
+          "quaternary": "5F01D1",
+          "header_background": "FFFFFF",
+          "header_primary": "666666",
+          "highlight": "FDE9B7",
+          "danger": "E20074",
+          "success": "00cc33",
+          "love": "D93025",
+          "accent-color": "0E69FF"
+        }
+    }
+  }

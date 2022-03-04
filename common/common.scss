@@ -1,0 +1,420 @@
+/* Fonts */
+@font-face {
+    font-family: 'campus_regular';
+    src: url($font-regular-2) format('woff2'),
+         url($font-regular) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'campus_bold';
+    src: url($font-bold-2) format('woff2'),
+         url($font-bold) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'campus_light';
+    src: url($font-light-2) format('woff2'),
+         url($font-light) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'campus_mediumregular';
+    src: url('productsans-medium.woff2') format('woff2'),
+         url('productsans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'campus_thinregular';
+    src: url('productsans-thin.woff2') format('woff2'),
+         url('productsans-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/* BEGIN: Stylize buttons =====================================================================================*/
+.btn-primary{
+    background-color: var(--quaternary);
+}
+
+.btn-default, .btn-primary{
+    border-radius: 2rem !important;
+}
+
+nav.post-controls .actions button, .widget-button{
+    border-radius: 2rem !important;
+}
+
+.topic-map .widget-button[title="collapse topic details"],
+.topic-map .widget-button[title="expand topic details"]
+{
+    border-radius: 0 !important;
+}
+
+.double-button .like-count:hover{
+    background: none !important;
+}
+
+nav.post-controls .actions button.create:hover{
+    background-color: var(--quaternary) !important;
+    color: #fff !important;
+}
+nav.post-controls .actions button.create:hover .d-icon{
+    color: #fff !important;
+}
+
+/* Customize the topic buttons because Discourse auto generates a light purple off of primary. */
+.topic-footer-main-buttons .btn-default{
+    background-color: #E0E0E0;
+    color: #666;
+}
+
+.topic-footer-main-buttons .btn-default:hover{
+    background-color: #aaa;
+    color: #fff;
+}
+
+
+/* Last Visit Bar =====================================================================================*/
+.topic-list .topic-list-item-separator .topic-list-data{
+    border-color: var(--quaternary-medium) !important;
+}
+.topic-list .topic-list-item-separator .topic-list-data span{
+    color: var(--quaternary-medium)  !important;
+}
+
+/* User profile page =====================================================================================*/
+.stats-title{
+    font-size: 0.95em;
+    color: var(--quaternary);
+}
+
+.has-background .user-profile-image{
+    border-radius: 0.4rem;
+}
+
+/* Nav tabs/bars =====================================================================================*/
+.nav-pills>li a{
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 2rem;
+}
+.nav-pills>li a:hover{
+    background-color: #E0E0E0;
+}
+
+.nav-pills>li a.active{
+    background-color: var(--quaternary);
+}
+
+.user-secondary-navigation .nav-stacked a.active, .user-stream .expand-item, .user-stream .collapse-item{
+    color: var(--quaternary);
+}
+.user-secondary-navigation .nav-stacked a{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+.list-controls .combo-box .combo-box-header{
+    border-radius: 2rem;
+}
+
+.nav-pills>li { 
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+.nav-pills>li>a{
+    font-size: var(--font-0);
+}
+.btn-default, .btn-primary{
+    font-family: 'campus_light', Arial, Helvetica, sans-serif !important;
+}
+
+.badge-contents h3{
+    font-family: 'campus_light', Arial, Helvetica, sans-serif !important;
+}
+.group-info-name{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+/* Headings ===================================================================================== */
+.user-profile-names h1, h2.full-name {
+    color: var(--quaternary);
+}
+
+h1,h2,h3,h4.h5,h6{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+/* font-family: 'product_sans_lightregular' !important; */
+
+/* Post Styles ===================================================================================== */
+.fancy-title{
+    color: var(--quaternary) !important;
+}
+.title-wrapper .topic-statuses .d-icon, .topic-status .d-icon{
+    color: var(--danger) !important;
+}
+
+.topic-body h1, .topic-body h2, .topic-body h3, .topic-body h4, .topic-body h5, .topic-body h6{
+    color: var(--primary);
+}
+
+.onscreen-post .post-notice .d-icon{
+    color: var(--tertiary) !important;
+}
+
+/* Groups ===================================================================================== */
+.group-box{
+    border-radius: 0.5rem;
+}
+
+.groups-info-name{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+.group-membership {
+    font-size: 80% !important;
+}
+
+.is-group-member{
+    padding: 3px;
+    padding-left:8px;
+    padding-right:8px;
+    border:solid 1px var(--success);
+    border-radius:2rem;
+}
+
+.group-details-button .btn{
+    border-radius: 2rem;
+}
+
+.group-nav .select-kit .select-kit-header:not(.btn){
+    border-radius:2rem  !important;
+}
+
+.group-members-actions .group-username-filter, .group-membership .btn {
+    border-radius:2rem !important;
+}
+
+.group-info .avatar-flair{
+    background-size: 60px;
+    height: 60px;
+    width: 60px;
+}
+
+.group-details-container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.groups-header-filters-name,
+.groups-header-filters .select-kit .select-kit-header:not(.btn){
+    border-radius: 2rem !important;
+}
+
+/* Badges ===================================================================================== */
+.badge-card .badge-contents .badge-icon img{
+    border-radius: 1rem;
+}
+.badge-card{
+    border-radius: 0.5rem;
+}
+
+.badge-link:hover{
+    color: var(--quaternary)  !important;
+}
+
+.badge-card .badge-contents .badge-icon.badge-type-bronze .fa,
+.user-badge.badge-type-bronze .fa, .user-card .badge-section .more-user-badges a.badge-type-bronze .fa{
+    color: #FF0080 !important; /* Find a better color to represent bronze. The OOB is gross */
+}
+
+.badge-card .badge-contents .badge-icon.badge-type-silver .fa,
+.user-badge.badge-type-silver .fa, .user-card .badge-section .more-user-badges a.badge-type-silver .fa{
+    color: #AAAAAA !important; /* Find a better color to represent bronze. The OOB is gross */
+}
+
+.badge-card .badge-contents .badge-icon.badge-type-gold .fa,
+.user-badge.badge-type-gold .fa, .user-card .badge-section .more-user-badges a.badge-type-gold .fa{
+    color: var(--quaternary) !important; /* Find a better color to represent bronze. The OOB is gross */
+}
+
+.badge-card .favorite-btn{
+    border-top-left-radius: 0.3rem;
+}
+.badge-card .favorite-btn:hover{
+    background-color: var(--quaternary);
+}
+.badge-card .favorite-btn .d-icon-star
+{
+    color: var(--quaternary);
+}
+
+/* badges in mini profile card */
+.user-card .badge-section .user-badge, .user-card .badge-section .more-user-badges a{
+    border-radius: 2rem;
+}
+.user-badge img, .user-card .badge-section .more-user-badges a img{
+    border-radius: 1rem;
+}
+
+.badge-wrapper.bullet .badge-category-bg{
+    height:11px;
+    width: 11px;
+    border-radius: 2rem;
+}
+
+.user-card .first-row .usercard-controls button, .group-card .first-row .usercard-controls button{
+    min-width: 120px;/* default 150px is too wide */
+}
+
+/* Make input fields not be so sharp ===================================================================================== */
+input, .combobox, .combo-box{
+    border-radius: 0.3rem !important;
+}
+
+/* Theme settings page adjustments */
+.themes-list-header .active{
+    background-color: var(--quaternary);
+}
+
+/* Alerts =====================================================================================*/
+.alert, .post-notice{
+    border-radius: 0.4rem;
+}
+.post-notice{
+    background-color: #FDE9B7;
+    color: #CC9900;
+}
+.post-notice .d-icon{
+    color: var(--quaternary);
+    color: #CC9900;
+    margin-right: 0.35em;
+}
+
+
+/* Timeline Handle Bar =====================================================================================*/
+.timeline-container .topic-timeline .timeline-handle{
+    background-color: var(--tertiary);
+}
+
+.timeline-container .topic-timeline .timeline-scrollarea{
+    border-color: var(--tertiary-low);
+}
+
+
+/* Toolbar in Users Page =====================================================================================*/
+.directory-controls .filter-name, .directory-controls .select-kit.combo-box .select-kit-header {
+    border-radius: 20px !important;
+}
+
+h2.selected-name .date-section {
+    color: var(--quaternary)  !important;
+}
+
+.directory-controls .caret-icon{
+    color: var(--quaternary)  !important;
+}
+
+.directory-table-container .directory table th.sortable{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+.user-info .username a, .users-list .username a{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+.edit-directory-column .btn, .modal-footer .btn {
+    border-radius: 2rem;
+}
+
+/* Reply Post Form =====================================================================================*/
+.reply-area .topic-link{
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+.select-kit.dropdown-select-box.composer-actions .select-kit-header {
+    border-radius: 2rem !important;
+}
+
+.d-editor-textarea-wrapper {
+    border-radius: 0.3rem !important;
+}
+
+.d-editor-button-bar button:hover{
+    background-color: var(--quaternary)  !important;
+    color: #fff;
+}
+
+.grippie{
+    background: var(--tertiary-low)  !important;
+}
+
+.open .grippie{
+    border-top-left-radius: 0.3rem !important;
+    border-top-right-radius: 0.3rem !important;
+}
+
+.btn-mini-toggle svg{
+    color: var(--quaternary)  !important;
+}
+
+.select-kit .select-kit-header:not(.btn){
+    border-radius: 0.4rem !important;
+}
+
+.select-kit-header-wrapper .d-icon{
+    color: var(--quaternary)  !important;
+}
+
+
+/* Polls =====================================================================================*/
+.poll-ui-builder .poll-type .poll-type-value{
+    padding: 6px 12px 6px;
+    border-radius: 2rem;
+}
+
+div.poll .results .bar,div.poll .results .bar-back{
+    border-radius: 2rem;
+}
+
+.poll-container .d-icon-circle{
+    color: var(--quaternary);
+}
+
+div.poll{
+    border-radius: 0.5rem; /*match groups and badges*/
+    background: #fff;
+}
+
+/* Review =====================================================================================*/
+.reviewable-actions .btn, .controls .btn{
+    border-radius: 2rem;
+}
+.d-date-time-input-range .from{
+    border-radius: 0.4rem !important;
+}
+.post-topic .title-text{
+    color: var(--quaternary) !important;
+    font-family: 'campus_regular', Arial, Helvetica, sans-serif !important;
+}
+
+/* Notifications ===================================================================================== */
+.user-stream .notification.unread{
+    background-color: var(--primary-low);
+}
+
+.user-stream .notification.unread div a div,
+.user-stream .notification.unread .time{
+    font-weight: bold !important;
+}
+
+/* Categories */
+.navigation-container .select-kit .select-kit-header:not(.btn){
+    border-radius: 2rem !important;
+}
+

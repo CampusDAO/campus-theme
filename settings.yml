@@ -1,0 +1,44 @@
+Theme_Mode:
+  default: Light
+  type: enum
+  choices:
+    - Light
+    - Dark
+  description: "Indicates whether to render a light or dark user interface."
+
+Allow_Branding:
+  type: bool
+  default: false
+  description: "Indicates wheter custom branding is allowed for this tenant. If false, the platform branding is displayed."
+
+Subscription_Plan:
+  default: 0
+  type: integer
+  min: 0
+  max: 10
+  description: "Indicates the type of subscription this tenant is subscribed to. 0 is for no subscription."
+
+Platform_Logo:
+  type: string
+  default: "/hello/logo.jpg"
+  description: "The path to the squared avatar logo to use."
+
+Platform_Favicon:
+  type: string
+  default: "/hello/favicon.png"
+  description: "The path to the squared avatar logo to use."
+
+Platform_Brand_Color:
+  type: string
+  default: "#5F01D1"
+  description: "The default color to use when custom branding isn't enabled."
+
+Platform_Accent_Color:
+  type: string
+  default: "#0E69FF"
+  description: "The default accent color to use when custom branding isn't enabled."
+
+Platform_Body_Color:
+  type: string
+  default: "#F0F2F5"
+  description: "The default body bg color to use when custom branding isn't enabled."
