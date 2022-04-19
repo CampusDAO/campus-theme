@@ -17,6 +17,10 @@
         $('.aside .nav-link').removeClass('active');
         $('.aside .nav-link').each(function () {
             var attr = $(this).attr('href');
+            console.log("attr");
+            console.log(attr);
+            console.log("url");
+            console.log(url);
             if (attr.slice(0, attr.indexOf('?')) == url) {
                 console.log("Found active tab");
                 console.log(attr);
