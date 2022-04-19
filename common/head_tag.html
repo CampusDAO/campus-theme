@@ -14,8 +14,12 @@
     function showActiveNavElement(){
         var url = window.location.href;
         var activeTabs = 0;
+        $('.aside .nav-link').removeClass('active');
         $('.aside .nav-link').each(function () {
-            if ($(this).attr('href') == url) {
+            var attr = $(this).attr('href');
+            if (attr.slice(0, attr.indexOf('?')) == url) {
+                console.log("Found active tab");
+                console.log(attr);
                 $(this).addClass('active');
                 activeTabs = 1;
             }
