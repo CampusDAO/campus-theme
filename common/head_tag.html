@@ -11,6 +11,7 @@
         return str.slice(0, index) + str.slice(index + searchStr.length);
     }
     
+    // need to run this on every page load
     function showActiveNavElement(){
         var url = window.location.href;
         var activeTabs = 0;
@@ -18,10 +19,11 @@
         $('.aside .nav-link').each(function () {
             var attr = $(this).attr('href');
             console.log("attr");
-            console.log(attr);
+            console.log(attr.slice(0, attr.indexOf('?'));
+            console.log(attr.split('?')[0]);
             console.log("url");
             console.log(url);
-            if (attr.slice(0, attr.indexOf('?')) == url) {
+            if (attr.split('?')[0] == url) {
                 console.log("Found active tab");
                 console.log(attr);
                 $(this).addClass('active');
