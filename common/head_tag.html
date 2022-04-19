@@ -10,8 +10,15 @@
             
         return str.slice(0, index) + str.slice(index + searchStr.length);
     }
+
+    function initNavClickEvent(){
+        $('.aside .nav-link').on('click', function(){
+            $('.aside .nav-link').removeClass('active');
+            $(this).addClass('active');
+
+        })
+    }
     
-    // need to run this on every page load
     function showActiveNavElement(){
         var url = window.location.href;
         var activeTabs = 0;
@@ -51,6 +58,7 @@
             console.log(response);
 			$('#main').addClass('aside-secondary-disabled');
 			$(response).insertBefore($('#main-outlet'));
+            initNavClickEvent();
 			showActiveNavElement();
 		},
 		error: function (error) {
