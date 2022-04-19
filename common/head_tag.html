@@ -46,6 +46,7 @@
 		type: 'GET',
 		crossDomain: true,
 		success: function (response) {
+            console.log(response);
 			$('#main').addClass('aside-secondary-disabled');
 			$(response).insertBefore($('#main-outlet'));
 			showActiveNavElement();
