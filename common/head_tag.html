@@ -25,14 +25,7 @@
         $('.aside .nav-link').removeClass('active');
         $('.aside .nav-link').each(function () {
             var attr = $(this).attr('href');
-            console.log("attr");
-            console.log(attr.slice(0, attr.indexOf('?')));
-            console.log(attr.split('?')[0]);
-            console.log("url");
-            console.log(url);
             if (attr.split('?')[0] == url) {
-                console.log("Found active tab");
-                console.log(attr);
                 $(this).addClass('active');
                 activeTabs = 1;
             }
