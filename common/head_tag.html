@@ -1,4 +1,49 @@
+<script src="https://kit.fontawesome.com/5be8af1f86.js" crossorigin="anonymous"></script>
+
 <script type="text/discourse-plugin" version="0.8.13">
-    // alert(settings.Theme_Mode);
-    // alert(settings.Platform_Logo);
+
+    function removeFirstOccurrence(str, searchStr) {
+        var index = str.indexOf(searchStr);
+        
+        if (index === -1)
+            return str;
+            
+        return str.slice(0, index) + str.slice(index + searchStr.length);
+    }
+    
+    function showActiveNavElement(){
+        var url = window.location.href;
+        $('.aside .nav-link').each(function () {
+            if ($(this).attr('href') == url) {
+                $(this).addClass('active');
+            }
+            else {
+                $('#community-area-navigation-link').addClass('active');
+            }
+        });
+    
+    }
+
+    let origin = window.location.origin;
+    
+    let navUrl = removeFirstOccurrence(origin, '-x');
+    
+    navUrl = navUrl + '/settings/navigation';
+    
+	$.ajax({
+		url: navUrl,
+		type: 'GET',
+		crossDomain: true,
+		success: function (response) {
+			$('#main').addClass('aside-secondary-disabled');
+			$(response).insertBefore($('#main-outlet'));
+			showActiveNavElement();
+		},
+		error: function (error) {
+			console.log(error);
+		},
+	});
+    
+    
+    
 </script>
