@@ -13,14 +13,17 @@
     
     function showActiveNavElement(){
         var url = window.location.href;
+        var activeTabs = 0;
         $('.aside .nav-link').each(function () {
             if ($(this).attr('href') == url) {
                 $(this).addClass('active');
-            }
-            else {
-                $('#community-area-navigation-link').addClass('active');
+                activeTabs = 1;
             }
         });
+
+        if (activeTabs < 1) {
+            $('#community-area-navigation-link').addClass('active');
+        }
     
     }
 

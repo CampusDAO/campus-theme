@@ -534,6 +534,16 @@ div.poll{
     color: var(--tertiary) !important;
 }
 
+#subdomain-area-navigation .aside-nav ul {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
+.d-none {
+  display: none !important;
+}
+
 /* ASIDE COPIED */
 @charset "UTF-8";
 /* BW: 08/30 Some styles pulled from metronic 7 Demo 3 with some customizations */
