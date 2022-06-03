@@ -4791,3 +4791,48 @@ g
   color: #5F01D1 !important;
 }
 
+/* START FOOTER STYLES */
+.footer {
+  z-index: 110;
+}
+
+.pb-4, .py-4 {
+  padding-bottom: 1rem !important;
+}
+
+.pt-4 {
+  padding-bottom: 1rem !important;
+}
+
+.footer .container.main-footer {
+  max-width: unset !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.footer .poweredby {
+  height: 20px;
+}
+
+@media (min-width: 992px) {
+  .footer .container {
+      padding: 0 25px;
+  }
+}
+
+.footer .container::before {
+  content: unset;
+}
+
+.footer .container::after {
+  content: unset;
+}
+
+.site-logo {
+  border-radius: .85rem !important;
+}
+/* END FOOTER STYLES */
+
+
