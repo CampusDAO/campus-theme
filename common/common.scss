@@ -4844,6 +4844,17 @@ g
   width: 100%;
   padding-bottom: 1rem !important;
 }
+
+// stick footer to bottom
+.body {
+  flex-direction: column;
+  display: flex;
+}
+
+#main {
+  flex-grow: 1;
+}
+
 /* END FOOTER STYLES */
 
 
