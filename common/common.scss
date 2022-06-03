@@ -4794,7 +4794,6 @@ g
 /* START FOOTER STYLES */
 .footer {
   z-index: 110;
-  padding-bottom: 1.75rem !important;
 }
 
 .pb-4, .py-4 {
@@ -4840,9 +4839,10 @@ g
 }
 
 .footer-wrapper {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
+  padding-bottom: 1rem !important;
 }
 /* END FOOTER STYLES */
 
