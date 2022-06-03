@@ -4794,6 +4794,7 @@ g
 /* START FOOTER STYLES */
 .footer {
   z-index: 110;
+  padding-bottom: 1.75rem !important;
 }
 
 .pb-4, .py-4 {
@@ -4820,6 +4821,10 @@ g
   .footer .container {
       padding: 0 25px;
   }
+
+  .footer {
+    padding-left: 90px !important;
+  }
 }
 
 .footer .container::before {
@@ -4830,8 +4835,14 @@ g
   content: unset;
 }
 
-.site-logo {
+#site-logo {
   border-radius: .85rem !important;
+}
+
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 /* END FOOTER STYLES */
 
