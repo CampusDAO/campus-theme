@@ -37,6 +37,14 @@
     
     }
 
+        
+    api.decorateWidget('home-logo:after', helper => {
+        return helper.h("div.header-title", [
+            helper.h("span.border-right.ml-11px"),
+            helper.h("span.font-size-h6.font-weight-bold.pl-11px.text-dark.pr-2.title-primary", "Community")
+        ]);
+    });
+
     let origin = window.location.origin;
     
     let navUrl = removeFirstOccurrence(origin, '-x');
