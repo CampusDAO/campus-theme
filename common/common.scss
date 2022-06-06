@@ -4863,7 +4863,7 @@ body {
 
 
 /* START HEADER STYLE */
-#site-logo {
+.d-header .title {
   padding-left: .75rem !important;
 }
 
@@ -4889,6 +4889,10 @@ body {
   color: #181C32 !important;
   font-size: 1.5rem !important;
   font-weight: 500 !important;
+}
+
+.h-35px {
+  height: 35px !important;
 }
 
 /* END HEADER STYLES */
