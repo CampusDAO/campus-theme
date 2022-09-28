@@ -40,6 +40,11 @@
 }
 */
 
+/* Hide admin section */
+.about.admins {
+  display: none !important;
+}
+
 /* BEGIN: Stylize buttons =====================================================================================*/
 .btn-primary{
     background-color: var(--quaternary);
